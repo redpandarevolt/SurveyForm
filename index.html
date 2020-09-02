@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Web Design Project - Survey Form</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+<script src="js/scripts.js"></script>
+<div class="container">
+    <h1 id="title">Build a Survey Form</h1>
+    <p id="description">This project is second of five project needed to complete the responsive web design certificate under free code camps full stack program.The objective is to create a survey form that meets 16 user stories. To find out more information about this course enter your contact information and note your preferences so we better direct your inquiry. </p>
+    <hr>
+    <form id="survey-form" action="submit">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" name="nameField" id="name" placeholder="First and Last Name" required><br>
+
+        <label for="email" id=email-label>email</label><br>
+        <input type="email" name="emailField" id="email" placeholder="Email" required><br>
+
+        <label for="number" id="number-label">Birthday</label><br>
+        <input type="number" name="birthdayField" id="number" min="0100" max="3199" placeholder="MMYY"><br>
+
+        <label for="dropdown">What is your experience level?</label><br>
+        <select name="dropdown"  id="dropdown">
+            <!-- 		<select name="experience" id="experience"> -->
+            <option value="Novice">Novice (Less than 1 year)</option>
+            <option value="Intermediate">Intermediate (1-2)</option>
+            <option value="Advanced">Advanced ( 2-5 years)</option>
+            <option value="Master">Master (5-8 years)</option>
+            <option value="Ninja">Ninja (10+ years)</option>
+        </select><br><br>
+
+        <fieldset >
+            <legend>What is your favorite coding language??</legend>
+            <p id="radio-list">
+                <input type="radio" name="action" id="JS"value="JS"/>Javascript<br><br/>
+                <input type="radio" name="action" id="SASS"value="SASS"/>SASS<br><br/>
+                <input type="radio" name="action" id="HTML" value="HTML"/>HTML<br><br/>
+                <input type="radio" name="action" id="CSS" value="CSS"/>CSS<br><br/>
+                <input type="radio" name="action" id="R" value="R" >React<br><br/>
+                <input type="radio" name="action" id="V" value="V"/>Vue<br><br/>
+                <input type="radio" name="action" id="N" value="N" />Node<br><br/>
+                <input type="radio" name="action" id="Ang" value="Ang" />Angular<br><br/>
+                <input type="radio" name="action" id="BS" value="BS"/>Bootstrap<br><br/>
+                <input type="radio" name="action" id="JQ" value="JQ"/>JQuery<br><br/>
+            </p>
+        </fieldset>
+
+        <h3>Pick Areas of Interest:</h3>
+        <p><input type="checkbox" value="tech">Responsive Web Design</p>
+        <p><input type="checkbox" value="tech"> Javascript Algorithm and Data Structures</p>
+        <p><input type="checkbox" value="tech"> Front End Libraries</p>
+        <p><input type="checkbox" value="tech"> Data Visualization</p>
+        <p><input type="checkbox" value="tech"> API's and Microservices</p>
+        <p><input type="checkbox" value="tech"> Information Security and Quality Assurance</p><br><br>
+        <textarea name="comment" id="comment" cols="0" rows="10"></textarea>
+
+        <input id="submit" type="submit" value="submit">
+    </form>
+
+</div>
+</body>
+</html>
+

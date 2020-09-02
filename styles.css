@@ -1,0 +1,63 @@
+body{
+    background:#02075d;
+}
+
+.container{
+    max-width:80%;
+    color:cyan;
+    background:teal;
+    height:auto;
+    margin-top:85px;
+    margin-bottom:85px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:25px;
+}
+
+#title{
+    /*margin-left:20px;*/
+    margin-top:20px;
+    max-width:85%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#description{
+    max-width:85%;
+    font-size:18px;
+    margin-left:auto;
+    margin-right: auto;
+}
+hr{
+    width:85%;
+    margin-top:25px;
+    margin-bottom:2px;
+    border-top:3px solid cyan;
+}
+#survey-form{
+    /*margin-left:20px;*/
+    margin-top:20px;
+    max-width:85%;
+    margin-left:auto;
+    margin-right: auto;
+}
+#survey-form{
+    margin-top:5px;
+    padding:20px;
+    width: 100%;
+}
+#number, #name, #email, #dropdown{
+    width: 100%;
+    padding:5px;
+    border-radius: 5px;
+}
+
+#submit{
+    margin:20px;
+    max-width:80%;
+}
+#radio-list{
+    max-width:35%;
+}
+
+
